@@ -6,6 +6,10 @@ data = { 'Name': ['Muskan', 'Yogesh', 'Manish'],
         'City': ['Prayagraj', 'Narnaul', 'Bokaro']
 }
 df= pd.DataFrame(data)
+
+new_row_loc = {'Name': 'Paramvir', 'Age': '47', 'City': 'Hajipur'}
+df.loc[len(df.index)]= new_row_loc
+
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
 #file path
